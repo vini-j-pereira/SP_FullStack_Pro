@@ -188,3 +188,41 @@ footer p{
     margin-left: 12px;
 }
 
+/* Responsividade */
+
+@media (max-width: 1050px){
+    .main h1{
+        font-size: 45px;
+    }
+
+    .main p{
+        font-size: 18px;
+    }
+
+    .main{
+        background-size: cover;
+    }
+
+    .sobre{
+        flex-direction: column;
+        padding: 80px 0 0 0;
+    }
+
+    .sobre div{
+        max-width: 80%;
+    }
+
+    .sobre div h2{
+        font-size: 40px;
+    }
+
+    .sobre img{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .projetos img{
+        width: 27.5%;
+    }
+}
+
