@@ -141,7 +141,7 @@ input[type="submit"]{
 footer{
     text-align: center;
     height: 50px;
-    margin-top: -50px;
+    margin-top: 5%;
 }
 
 footer a{
