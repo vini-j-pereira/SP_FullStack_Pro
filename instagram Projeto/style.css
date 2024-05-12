@@ -123,4 +123,41 @@ input[type="submit"]{
     user-select: none;
 }
 
+.get-app-painel{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-app{
+    margin-top: 16px;
+}
+
+.btn-app img{
+    height: 40px;
+    padding: 0 2px;
+    border: 0;
+}
+
+footer{
+    text-align: center;
+    height: 50px;
+    margin-top: -50px;
+}
+
+footer a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.text-small{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    padding-left: 20px;
+    display: inline-block;
+}
+
 
