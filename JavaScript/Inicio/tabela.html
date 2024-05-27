@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela</title>
+</head>
+<body>
+    <div class="tabela-1">
+        <table>
+            <thead>
+                <th>
+                    Numero
+                </th>
+                <th>
+                    Nome 
+                </th>
+                <th>
+                    gols
+                </th>
+                <th>
+                    Gols Edit
+                </th>
+            </thead>
+        
+            <tbody>
+                <td>
+                    10
+                </td>
+                <td>
+                    Vini
+                </td>
+                <td id="gols">
+                    0
+                </td>
+                <td>
+                    <button id="maisGol" onclick="adicionarGols()">+</button>
+                    <button id="MenosGol" onclick="removerGols()">-</button>
+                    
+                    
+                </td>
+            </tbody>
+        </table>
+    </div>
+    <script src="tabela.js"></script>
+</body>
+</html>
