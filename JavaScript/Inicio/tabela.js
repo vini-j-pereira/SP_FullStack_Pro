@@ -1,11 +1,12 @@
 let maisGol = document.getElementById("maisGol");
 let menosGol = document.getElementById("MenosGol");
 let gols = document.getElementById("gols")
-let numeroDeGols = Number(1);
+let numeroDeGols = Number(0);
 
 function adicionarGols(){
 
-        gols.innerHTML = numeroDeGols++
+        numeroDeGols += 1;
+        gols.innerHTML = numeroDeGols
    
 
     
@@ -13,14 +14,15 @@ function adicionarGols(){
 
 function removerGols(){
 
+    if(numeroDeGols > 0){
 
-    if(numeroDeGols < 0){
-        alert('Gols não podem ser inferior a zero!')
-        numeroDeGols = 0
+        numeroDeGols -= 1
+        gols.innerHTML = numeroDeGols
     }
     else{
       
-      gols.innerHTML = numeroDeGols--
+      alert('Numero de gols não pode ser inferior a zero!')
+      
     }
 
     
