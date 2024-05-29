@@ -19,3 +19,10 @@ datanova.getDate()+"/"+(datanova.getMonth()+1)+"/"+datanova.getFullYear();
 
 // Somar data, mês, ano, hora:
 datanova.setDate(datanova.getDate()+5);
+
+//Mostra o dia:
+datanova.getDay();
+
+let dias = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
+
+dias[datanova.getDay()];
