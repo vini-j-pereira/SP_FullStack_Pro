@@ -21,3 +21,19 @@ function pedir() {
             break;
     }
 }
+
+// Condicionais
+
+let nome = "Vinicius";
+let userOline = false;
+
+if(userOline === true){
+    console.log("Usuario está Online!");
+}else{
+    console.log("Usuario está Offline!");
+}
+
+// Operador ternario 
+let numero = 10;
+
+numero === 9 ? console.log("Numero é igual a 10") : console.log("Numero não é igual a 10"); 
