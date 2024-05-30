@@ -40,4 +40,7 @@ function calcular(event){
     }else if( imc >= 30){
         resultado.innerHTML = `<br> Seu resultado foi: ${imc.toFixed(2).replace('.' , ',')} <br> Você esta obeso, procure ajuda medica!`;
     }
+
+    document.getElementById('peso').value = '';
+    document.getElementById('altura').value = '';
 }
