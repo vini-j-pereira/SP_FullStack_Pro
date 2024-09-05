@@ -47,3 +47,7 @@
 //Array----------------------------------------
 
 let lista = ['Vini', 'Jose', 'Theo', 'Matheus', 13];
+
+// --Adiciona um elemento a lista -- lista.push("Renato")
+
+// -- Subistitui o valor do elemento indicado -- lista[0] = 'Renato'
