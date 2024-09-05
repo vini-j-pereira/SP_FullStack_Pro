@@ -46,8 +46,59 @@
 
 //Array----------------------------------------
 
-let lista = ['Vini', 'Jose', 'Theo', 'Matheus', 13];
+// let lista = ['Vini', 'Jose', 'Theo', 'Matheus', 13];
 
 // --Adiciona um elemento a lista -- lista.push("Renato")
 
 // -- Subistitui o valor do elemento indicado -- lista[0] = 'Renato'
+
+
+//Loops---------------------------------------
+
+
+//while = enquanto
+// var x = 0;
+
+// while(x <= 10){
+//     document.write("<br> O valor do x é: " + x);
+
+//     //incrementando o contador (+1)
+//     x++
+// }
+
+//---------------------------------------------------
+
+//for = para
+
+// var valor = 30;
+
+// for(i = 0; i <= valor; i++){
+//     document.write("<br> Valor do i é: " + i);
+// }
+
+//---------------------------------------------------
+
+//Switch
+
+function pedir(){
+   var valor = prompt("Digite o valor referente ao produto!");
+
+   switch(Number(valor)) {
+    case 1:
+        res.innerHTML = "<br> Você escolheu Suco!";
+        break;
+    case 2:
+        res.innerHTML = "<br> Você escolheu Agua!";
+        break;
+    case 3:
+        res.innerHTML = "<br> Você escolheu Cerveja!";
+        break;
+    case 4:
+        res.innerHTML = "<br> Você escolheu Cachaça!";
+        break;
+    default:
+        res.innerHTML = "<br> Valor valido de 1 a 4";
+        break;
+   }
+
+}
