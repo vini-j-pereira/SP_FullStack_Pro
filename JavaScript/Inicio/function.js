@@ -80,25 +80,50 @@
 
 //Switch
 
-function pedir(){
-   var valor = prompt("Digite o valor referente ao produto!");
+// function pedir(){
+//    var valor = prompt("Digite o valor referente ao produto!");
 
-   switch(Number(valor)) {
-    case 1:
-        res.innerHTML = "<br> Você escolheu Suco!";
-        break;
-    case 2:
-        res.innerHTML = "<br> Você escolheu Agua!";
-        break;
-    case 3:
-        res.innerHTML = "<br> Você escolheu Cerveja!";
-        break;
-    case 4:
-        res.innerHTML = "<br> Você escolheu Cachaça!";
-        break;
-    default:
-        res.innerHTML = "<br> Valor valido de 1 a 4";
-        break;
-   }
+//    switch(Number(valor)) {
+//     case 1:
+//         res.innerHTML = "<br> Você escolheu Suco!";
+//         break;
+//     case 2:
+//         res.innerHTML = "<br> Você escolheu Agua!";
+//         break;
+//     case 3:
+//         res.innerHTML = "<br> Você escolheu Cerveja!";
+//         break;
+//     case 4:
+//         res.innerHTML = "<br> Você escolheu Cachaça!";
+//         break;
+//     default:
+//         res.innerHTML = "<br> Valor valido de 1 a 4";
+//         break;
+//    }
 
+// }
+
+function enviar() {
+    var valor = Number(prompt("Digite um valor"));
+
+    var sinal = valor % 2
+
+    if(valor >= 0 && sinal == 0){
+       res.innerHTML = "Valor é Positivo e Numero é Par! "
+       
+
+    } else if(valor >= 0 && sinal != 0) {
+        res.innerHTML = "Valor é Positivo e Numero é Impar!"
+        
+
+    } else if(valor < 0 && sinal == 0){
+        res.innerHTML = "Valor é Negativo e Numero é Par!"
+
+
+    }else if(valor < 0 && sinal != 0){
+        res.innerHTML = "Valor é Negativo e Numero é Impar!"
+
+    }
+
+    
 }
