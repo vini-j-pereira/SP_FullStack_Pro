@@ -109,19 +109,19 @@ function enviar() {
     var sinal = valor % 2
 
     if(valor >= 0 && sinal == 0){
-       res.innerHTML = "Valor é Positivo e Numero é Par! "
+       res.innerHTML = ( valor + " O Valor é Positivo e o Numero é Par!"); 
        
 
     } else if(valor >= 0 && sinal != 0) {
-        res.innerHTML = "Valor é Positivo e Numero é Impar!"
+        res.innerHTML = ( valor + " O Valor é Positivo e o Numero é Impar!"); 
         
 
     } else if(valor < 0 && sinal == 0){
-        res.innerHTML = "Valor é Negativo e Numero é Par!"
+        res.innerHTML = ( valor + " O Valor é Negativo e o Numero é Par!"); 
 
 
     }else if(valor < 0 && sinal != 0){
-        res.innerHTML = "Valor é Negativo e Numero é Impar!"
+        res.innerHTML = ( valor + " O Valor é Negativo e o Numero é Impar!");
 
     }
 
