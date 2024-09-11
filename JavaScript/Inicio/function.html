@@ -31,13 +31,28 @@
 
     <!-- IF -->
 
-    <h1>Digite um valor</h1>
+    <!-- <h1>Digite um valor</h1>
     <br>
     <div id="res">
 
     </div>
     <br>
-    <button onclick="enviar()">Enviar</button>
+    <button onclick="enviar()">Enviar</button> -->
+
+    <form onsubmit="return calcular(event)">
+        <label>Digite seu peso:</label><br>
+        <input type="text" name="peso" id="peso" placeholder="Ex: 65"><br><br>
+
+        <label>Digite a sua altura</label><br>
+        <input type="text" name="altura" id="altura" placeholder="Ex: 1,75"><br><br>
+        
+        <input type="submit" value="Calcular IMC">
+
+    </form><br>
+
+    <div id="res">
+
+    </div>
 
 
     <script src="function.js"></script>

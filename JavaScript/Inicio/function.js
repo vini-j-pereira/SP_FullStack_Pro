@@ -103,27 +103,60 @@
 
 // }
 
-function enviar() {
-    var valor = Number(prompt("Digite um valor"));
+// function enviar() {
+//     var valor = Number(prompt("Digite um valor"));
 
-    var sinal = valor % 2
+//     var sinal = valor % 2
 
-    if(valor >= 0 && sinal == 0){
-       res.innerHTML = ( valor + " O Valor é Positivo e o Numero é Par!"); 
+//     if(valor >= 0 && sinal == 0){
+//        res.innerHTML = ( valor + " O Valor é Positivo e o Numero é Par!"); 
        
 
-    } else if(valor >= 0 && sinal != 0) {
-        res.innerHTML = ( valor + " O Valor é Positivo e o Numero é Impar!"); 
+//     } else if(valor >= 0 && sinal != 0) {
+//         res.innerHTML = ( valor + " O Valor é Positivo e o Numero é Impar!"); 
         
 
-    } else if(valor < 0 && sinal == 0){
-        res.innerHTML = ( valor + " O Valor é Negativo e o Numero é Par!"); 
+//     } else if(valor < 0 && sinal == 0){
+//         res.innerHTML = ( valor + " O Valor é Negativo e o Numero é Par!"); 
 
 
-    }else if(valor < 0 && sinal != 0){
-        res.innerHTML = ( valor + " O Valor é Negativo e o Numero é Impar!");
+//     }else if(valor < 0 && sinal != 0){
+//         res.innerHTML = ( valor + " O Valor é Negativo e o Numero é Impar!");
+
+//     }
+
+    
+// }
+
+//-------------------------------------------------
+
+//Calculadora IMC -------------------------------
+var peso;
+var altura;
+var imc;
+var res = document.getElementById('res');
+
+function calcular(event){
+    event.preventDefault();
+
+    peso = document.getElementById('peso').value;
+    altura = document.getElementById('altura').value;
+
+    imc = peso / (altura * altura);
+
+    if(imc < 17){
+        res.innerHTML = `<br> Seu resultado foi: ${imc.toFixed(2)} <br> Cuidado você esta muito abaixo do peso! ideal`;
+
+    } else if(imc > 17 && imc <= 18.49){
+        res.innerHTML = `<br> Seu resultado foi: ${imc.toFixed(2)} <br> Você esta muito abaixo do peso! ideal`;
+
+    } else if(imc > 18.50 && imc <= 24.99){
+        res.innerHTML = `<br> Seu resultado foi: ${imc.toFixed(2)} <br> Você esta no peso ideal!`;
+
+    } else if(imc > 25 && imc <= 29.99){
+        res.innerHTML = `<br> Seu resultado foi: ${imc.toFixed(2)} <br> Você esta acima do peso ideal!`;
 
     }
 
-    
 }
+ 
