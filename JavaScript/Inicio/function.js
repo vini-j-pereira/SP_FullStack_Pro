@@ -158,5 +158,9 @@ function calcular(event){
 
     }
 
+    document.getElementById('peso').value = '';
+    document.getElementById('altura').value = '';
+
+
 }
  
