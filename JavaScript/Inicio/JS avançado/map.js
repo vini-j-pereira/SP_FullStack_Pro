@@ -15,12 +15,12 @@ lista.map((item, index) => {
 let numeros = [5, 3, 2];
 
 let total = numeros.reduce((acumulador, numero, indice, original) => {
-    console.log(acumulador);
-    console.log(numero);
-    console.log(indice);
-    console.log(original);
+    console.log(acumulador); // <= total ate o momento (total  em relação ao looping atual dentro do array)
+    console.log(numero); // <= valor atual
+    console.log(indice); // <= index atual
+    console.log(original); // array original 
 
-    return acumulador += numero;
+    return acumulador += numero; // retornando o valor acumulado mais o numero atual
 
 })
 
